@@ -8,6 +8,7 @@ def input_array():
 
 
 def get_max_count(array):
+    # The array can have the same number of some elements.
     same_counts = []
     result = (Counter(a).most_common(len(set(array))))
     max_count = result[0][1]
